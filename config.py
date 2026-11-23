@@ -3,9 +3,13 @@ Configuration and constants for the Pixel 10 Pro Google One Gemini Bot.
 """
 
 import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # ── Telegram ──────────────────────────────────────────────────────────────────
-TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "")
+TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "9186091293:AAGgzHfxfb2mgemOw5S-PnCVbX07Y6leUT4")
 
 # ── Device specs – Google Pixel 10 Pro (Android 16) ──────────────────────────
 DEVICE_MODEL = "Pixel 10 Pro"
